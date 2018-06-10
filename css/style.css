@@ -16,9 +16,18 @@ selector {
 
 /* Type selector */
 
+/*/////GLOBAL/////*/
+h3 {
+  margin: 0 0 10px;
+}
+
 p { /* select all <p> */
   font-size: 1em; /* 16px, ?pt, 100%, 1em */
   line-height: 1.5em;
+}
+
+figure {
+  margin: 0 0 10px;
 }
 
 figcaption {
@@ -30,24 +39,21 @@ figcaption {
   color: #777;
   text-align: right;
 }
-
 /* Class selector (applied to as many elements as you like) */
-
 .milk-text { /* select elements with class="milk-text" */
   font: bold 2.6em 'Elsie Swash Caps', cursive;
   color: white;
   text-shadow: 0 2px 3px #000;
 }
 
-/* ID selector (apply to one unique element per page) */
+/*////////////BACKGROUNDS///////////*/
 
-#logo { /* select elements with id="logo" */
-  background: aqua;
-}
 
-/* Descendent Selector */
 
-#logo h1 { /* selects <h1> if inside the id="logo" */
+
+
+/*/////////// LOGO ///////////*/
+#logo h1 {
   font-family: 'Clicker Script', cursive;
 }
 
@@ -55,7 +61,13 @@ figcaption {
   font-family: 'Elsie Swash Caps', cursive;
 }
 
-/* Psuedo Selector */
+/*////////// MAIN SECTION ///////////*/
+
+/*////////// DETAILS ///////////*/
+
+#details div {
+  height: 221px;
+}
 
 #details a:link, #details a:visited {
   color: black;
@@ -93,3 +105,38 @@ figcaption {
 [class*="col-"] {
   margin-left: 2%;
 }
+.first {
+  margin-left: 0%;
+}
+
+/*///////////// SOCIAL /////////////*/
+#social {
+  position: fixed;
+  top: 185px;
+  right: 20px;
+  width: 40px;
+  z-index: 1;
+}
+
+#social a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: yellow;
+}
+
+/*////////// HEADER //////////*/
+
+
+
+/*////////// NAVBAR //////////*/
+
+
+/*/////// MAIN SECTIONS ///////*/
+
+section {
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+/*////////// FOOTER //////////*/
